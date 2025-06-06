@@ -22,7 +22,6 @@ RUN pip install --no-cache-dir -e .
 # Copier le reste des fichiers du projet
 COPY . .
 
-
 # Exposer le port pour Streamlit
 EXPOSE 8501
 
