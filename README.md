@@ -7,7 +7,7 @@ Ce projet est une application web qui permet d'analyser automatiquement les post
 - 🔎 Recherche et affichage du dernier post public d'un utilisateur Bluesky
 - 🤖 Analyse automatique du contenu par un modèle d'IA
 - 🌐 Vérification des faits via des recherches web en temps réel
-- 📊 Classification des posts en trois catégories : VRAI, FAUX, ou NON VÉRIFIABLE
+- 📊 Classification des posts en trois catégories : VRAI, FAKE NEWS, ou NON VÉRIFIABLE
 
 ## Technologies utilisées
 - Python
@@ -20,23 +20,9 @@ Ce projet est une application web qui permet d'analyser automatiquement les post
 
 ## Installation
 
-### Option 1 : Installation avec Docker (Recommandée)
-1. Assurez-vous d'avoir Docker et Docker Compose installés sur votre machine
-2. Clonez le repository :
-```bash
-git clone [URL_DU_REPO]
-cd Blue-Sky-Fake-News-Detector
-```
-3. Lancez l'application avec Docker Compose :
-```bash
-docker-compose up --build
-```
-4. Accédez à l'application dans votre navigateur à l'adresse : `http://localhost:8501`
-
-### Option 2 : Installation manuelle
 1. Clonez le repository :
 ```bash
-git clone [URL_DU_REPO]
+git clone [https://github.com/Thomas-Brvn/Social-Network-Fake-News-Detection.git]
 cd Blue-Sky-Fake-News-Detector
 ```
 
@@ -47,27 +33,36 @@ source .venv/bin/activate
 uv sync
 ```
 
-3. Installez Ollama et téléchargez le modèle LLaMA 3.2 :
-```bash
-curl -fsSL https://ollama.com/install.sh | sh
-ollama pull llama3.2
-```
-
-4. Configurez les variables d'environnement :
+2. Configurez les variables d'environnement :
 Créez un fichier `.env` avec vos identifiants Bluesky :
 ```
 BLSKY_IDENTIFIER=votre_identifiant
 BLSKY_PASSWORD=votre_mot_de_passe
 ```
 
-## Utilisation
-1. Lancez l'application :
+### Option 1 : Installation avec Docker (Recommandée)
+1. Assurez-vous d'avoir Docker et Docker Compose installés sur votre machine
+2. Lancez l'application avec Docker Compose :
+```bash
+docker-compose up --build
+```
+4. Accédez à l'application dans votre navigateur à l'adresse : `http://localhost:8501`
+
+### Option 2 : Installation manuelle
+1. Installez Ollama et téléchargez le modèle LLaMA 3.2 :
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull llama3.2
+```
+
+2. Lancez l'application :
 ```bash
 streamlit run Analyseur_de_Tweet.py
 ```
 
-2. Entrez le nom d'utilisateur Bluesky à analyser (format : username.bsky.social)
-3. L'application affichera le dernier post de l'utilisateur et son analyse
+## Utilisation 
+1. Entrez le nom d'utilisateur Bluesky à analyser (format : username.bsky.social)
+2. L'application affichera le dernier post de l'utilisateur et son analyse
 
 ## Critères d'analyse
 L'IA analyse les posts selon plusieurs critères :
@@ -84,7 +79,13 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 - Suggérer de nouvelles fonctionnalités
 
 ## Licence
-[À définir]
+Ce projet est sous licence MIT.
 
 ## Auteurs
-[Votre nom] 
+Alphonse Marçay : (@amarcay) - Étudiant Data
+
+Thomas Bourvon : (@ThomasBrvn) - Étudiant Data
+
+Léo Charles : (@leochrls) - Étudiant Data
+
+Ivin Hernio : () - Étudiant Data
