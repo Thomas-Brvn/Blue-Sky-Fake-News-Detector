@@ -57,13 +57,13 @@ Post : "Donald Trump va rouvrir la prison d'Alcatraz pour y enfermer les pires c
 Post : "Le vaccin contre la grippe contient des puces 5G pour contrôler la population."
 → Analyse : Il s'agit d'une théorie conspirationniste répandue mais scientifiquement infondée.
 → Recherche : Toutes les sources fiables (OMS, CDC, etc.) démentent cette affirmation.
-→ Verdict : FAUX
+→ Verdict : FAKE NEWS
 
 🔹 Exemple 3 :
 Post : "Une météorite de la taille de Paris va frapper la Terre demain."
 → Analyse : L'affirmation est extrêmement grave et devrait être confirmée par des agences spatiales.
 → Recherche : Aucune alerte de la NASA ou autre source scientifique.
-→ Verdict : FAUX
+→ Verdict : FAKE NEWS
 
 🔹 Exemple 4 :
 Post : "Une nouvelle souche de COVID a été découverte en Chine."
