@@ -76,9 +76,8 @@ Sois critique, méthodique et objectif. Vérifie toujours avant de conclure.
 st.set_page_config(page_title="Bluesky Post Viewer", layout="centered")
 st.title("🔎 Dernier post public Bluesky d’un utilisateur")
  
-# À sécuriser dans secrets ou .env
-BLSKY_IDENTIFIER = "trou2balle.bsky.social"
-BLSKY_PASSWORD = "qebguk-vudhy5-gAxzer"
+BLSKY_IDENTIFIER = os.getenv("BLSKY_IDENTIFIER")
+BLSKY_PASSWORD = os.getenv("BLSKY_PASSWORD")
  
 username = st.text_input("Nom d'utilisateur Bluesky (ex : thomas.bsky.social)")
  
