@@ -2,3 +2,4 @@
 test.ipynb
 uv.lock
 venv/
+.gitignore
