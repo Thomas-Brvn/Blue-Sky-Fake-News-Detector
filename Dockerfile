@@ -22,11 +22,12 @@ RUN pip install --no-cache-dir -e .
 # Copier le reste des fichiers du projet
 COPY . .
 
-# Télécharger le modèle llama3.2
-RUN ollama pull llama3.2
 
 # Exposer le port pour Streamlit
 EXPOSE 8501
 
 # Commande pour démarrer l'application
-CMD ["streamlit", "run", "Analyseur_de_Tweet.py", "--server.address", "0.0.0.0"] 
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
