@@ -1,0 +1,22 @@
+[project]
+name = "BlueSKy_Detecteur_FakeNews"
+version = "0.1.0"
+description = "Application Streamlit qui permet de verifier si les informations sont des fakenews avec un model LLM Llama3.2 et un tool web Duckduckgo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit",
+    "atproto",
+    "langchain",
+    "langchain-community",
+    "langchain-core",
+    "langchain-ollama",
+    "langgraph",
+    "duckduckgo-search",
+    "typing",
+    "typing_extensions",
+    "pydantic",
+    "aiohttp",
+    "uvicorn",
+    "ipykernel",
+]
