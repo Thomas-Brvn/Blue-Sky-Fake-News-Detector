@@ -1,0 +1,4 @@
+.env
+test.ipynb
+uv.lock
+venv/

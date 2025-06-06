@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fake-news-detector:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    environment:
+      - TOKENIZERS_PARALLELISM=false
+    restart: unless-stopped 
