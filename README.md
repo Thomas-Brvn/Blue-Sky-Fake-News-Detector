@@ -39,4 +39,64 @@ docker rm $(docker ps -a -q)
 ## Notes
 
 - Le port 8000 est exposé pour accéder à l'application
-- Assurez-vous qu'aucune autre application n'utilise déjà le port 8000 sur votre machine 
+- Assurez-vous qu'aucune autre application n'utilise déjà le port 8000 sur votre machine
+
+----------------------------------------------------------------------------------------------
+
+
+# 🚀 Product Backlog
+
+Bienvenue sur le backlog du projet de détection de fausses nouvelles. Ce document suit les tâches à accomplir pour mener le projet à bien. Cochez les cases au fur et à mesure de votre avancement !
+
+
+## ✨ Fonctionnalités (Features)
+*Ce sont les nouvelles capacités à construire pour l'utilisateur.*
+
+### Priorité Élevée
+- [ ] **Mettre en place le serveur API principal (Back-end)**
+  - *Description : Créer la structure de base du serveur avec un framework comme FastAPI, incluant un premier endpoint de test.*
+- [ ] **Intégrer le modèle de langage (LLM) pour l'analyse**
+  - *Description : Connecter le serveur à un modèle pré-entraîné (via Hugging Face) pour analyser le contenu textuel d'une URL.*
+- [ ] **Développer l'interface utilisateur (Front-end) de base**
+  - *Description : Créer une page web simple avec un champ pour entrer une URL et un bouton pour lancer l'analyse.*
+- [ ] **Connecter la base de données MongoDB**
+  - *Description : Mettre en place la connexion à la base de données pour sauvegarder les résultats des analyses.*
+
+### Priorité Moyenne
+- [ ] **Mettre en place un système d'authentification des utilisateurs**
+  - *Description : Permettre aux utilisateurs de s'inscrire et de se connecter à l'application.*
+- [ ] **Créer une page de profil utilisateur avec historique**
+  - *Description : Afficher l'historique des analyses effectuées par l'utilisateur connecté.*
+
+### Priorité Faible
+- [ ] **Développer une extension de navigateur**
+  - *Description : Créer une extension simple pour Chrome ou Firefox qui permet de lancer une analyse directement depuis une page web.*
+
+
+## 📈 Améliorations (Improvements)
+*Ce sont des optimisations des fonctionnalités existantes.*
+
+- [ ] **Améliorer la précision du modèle de détection (Priorité : Élevée)**
+  - *Description : Appliquer des techniques de fine-tuning sur le modèle de base avec des données spécifiques aux fausses nouvelles pour améliorer la pertinence des résultats.*
+- [ ] **Optimiser les performances de l'API (Priorité : Moyenne)**
+  - *Description : Réduire le temps de réponse du serveur en mettant en place un système de cache pour les URLs déjà analysées.*
+- [ ] **Enrichir l'affichage des résultats (Priorité : Moyenne)**
+  - *Description : Au lieu d'un simple score, afficher des explications sur les raisons de la classification (ex: source non fiable, affirmations contredites, etc.).*
+
+## 🐞 Bogues (Bugs)
+*Ce sont des corrections de problèmes dans le code existant.*
+
+- [ ] **Gérer les erreurs d'URL (Priorité : Élevée)**
+  - *Description : L'application doit retourner une erreur claire et ne pas planter si l'utilisateur soumet une URL invalide, un lien mort ou une page protégée.*
+- [ ] **Sécuriser les endpoints de l'API (Priorité : Élevée)**
+  - *Description : Revoir le code de l'API pour prévenir les vulnérabilités de base (ex: injections, accès non autorisé).*
+
+## 🛠️ Dette Technique (Technical Debt)
+*Ce sont des tâches internes pour améliorer la qualité et la maintenabilité du code.*
+
+- [ ] **Rédiger les tests unitaires et d'intégration (Priorité : Élevée)**
+  - *Description : Écrire des tests automatisés pour les fonctions critiques du back-end afin d'éviter les régressions futures.*
+- [ ] **Mettre en place une documentation d'API (Priorité : Moyenne)**
+  - *Description : Utiliser un outil comme Swagger (OpenAPI) pour générer une documentation interactive de l'API.*
+- [ ] **Améliorer la configuration Docker (Priorité : Moyenne)**
+  - *Description : Optimiser le `Dockerfile` et utiliser `docker-compose` pour faciliter le lancement de l'environnement de développement complet.*
