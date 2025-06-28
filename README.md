@@ -42,7 +42,10 @@ docker rm $(docker ps -a -q)
 - Assurez-vous qu'aucune autre application n'utilise déjà le port 8000 sur votre machine
 
 ----------------------------------------------------------------------------------------------
+## Diagramme d'architecture
 
+![Diagramme d'architecture](./diagramme_projet.jpeg)
+----------------------------------------------------------------------------------------------
 
 # 🚀 Product Backlog
 
