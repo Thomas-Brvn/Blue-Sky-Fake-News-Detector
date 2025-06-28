@@ -56,9 +56,11 @@ Bienvenue sur le backlog du projet de détection de fausses nouvelles. Ce docume
 - [ ] **Mettre en place le serveur API principal (Back-end)**
   - *Description : Créer la structure de base du serveur avec un framework comme FastAPI, incluant un premier endpoint de test.*
 - [ ] **Intégrer le modèle de langage (LLM) pour l'analyse**
-  - *Description : Connecter le serveur à un modèle pré-entraîné (via Hugging Face) pour analyser le contenu textuel d'une URL.*
+  - *Description : Connecter le serveur à un modèle pré-entraîné (via Ollama) pour analyser le contenu textuel d'une URL.*
 - [ ] **Développer l'interface utilisateur (Front-end) de base**
   - *Description : Créer une page web simple avec un champ pour entrer une URL et un bouton pour lancer l'analyse.*
+- [ ] **Développer/Améliorer l'extension navigateur Bluesky**
+  - *Description : Améliorer ou créer l'extension Bluesky permettant de lancer une analyse directement depuis la page visitée.*
 - [ ] **Connecter la base de données MongoDB**
   - *Description : Mettre en place la connexion à la base de données pour sauvegarder les résultats des analyses.*
 
@@ -67,11 +69,10 @@ Bienvenue sur le backlog du projet de détection de fausses nouvelles. Ce docume
   - *Description : Permettre aux utilisateurs de s'inscrire et de se connecter à l'application.*
 - [ ] **Créer une page de profil utilisateur avec historique**
   - *Description : Afficher l'historique des analyses effectuées par l'utilisateur connecté.*
-
-### Priorité Faible
-- [ ] **Développer une extension de navigateur**
-  - *Description : Créer une extension simple pour Chrome ou Firefox qui permet de lancer une analyse directement depuis une page web.*
-
+- [ ] **Intégrer l'outil de recherche DuckDuckGo**
+  - *Description : Ajouter DuckDuckGo pour obtenir des résultats pertinents lors des recherches.*
+- [ ] **Empaqueter et déployer l'extension**
+  - *Description : Préparer l'extension pour sa distribution et automatiser son déploiement.*
 
 ## 📈 Améliorations (Improvements)
 *Ce sont des optimisations des fonctionnalités existantes.*
